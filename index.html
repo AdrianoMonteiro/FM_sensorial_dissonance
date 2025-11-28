@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>FM + Dissonância Sensorial Integrado</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    #main-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    .panel {
+      flex: 1;
+      min-width: 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 12px;
+      background: #fafafa;
+      max-width: 50%;
+      overflow: auto;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-container">
+    <div id="fm-container" class="panel"></div>
+    <div id="diss-container" class="panel"></div>
+  </div>
+
+  <script src="FM_DISS.js"></script>
+</body>
+</html>
